@@ -1,0 +1,70 @@
+<div class="row">
+	<article class="col col-sm-8">
+		<center><h4>FORMULARIO DE CONTACTO</h4></center><hr>
+		<form class="form-horizontal" role="form" ng-controller="sendmail as sc" ng-submit="sc.datasend()">
+			<div class="form-group">
+			    <label for="dname" class="col-lg-2 control-label">Nombre</label>
+			    <div class="col-lg-10">
+			      <input type="text" ng-model="sc.datain.dname" class="form-control" id="dname" placeholder=" *" required="required">
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label for="dmail" class="col-lg-2 control-label">Correo</label>
+			    <div class="col-lg-10">
+			      <input type="email" ng-model="sc.datain.dmail" class="form-control" id="dmail" placeholder=" *" required="required">
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label for="dsubject" class="col-lg-2 control-label">Asunto</label>
+			    <div class="col-lg-10">
+			      <input type="text" ng-model="sc.datain.dsubject" class="form-control" id="dsubject" placeholder=" *" required="required">
+			    </div>
+			</div>
+			<div class="form-group">
+				<label for="dmessage" class="col-lg-2 control-label">Mensaje</label>
+			    <div class="col-lg-10">
+			      <textarea class="form-control" ng-model="sc.datain.dmessage" rows="3"></textarea>
+			    </div>
+			</div>
+			<div class="form-group">
+			    <div class="col-lg-offset-2 col-lg-10">
+			    	<button class="btn btn-primary"><span>Enviar</span></button>
+			    </div>
+			</div>
+		</form>
+	</article>
+	<aside class="col col-sm-4">
+		<!--div ng-include src=" 'dir.html' "> </div-->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title"><center>REFERENCIAS</center></h3>
+			</div>
+			<div class="panel-body">
+				<p><span class="glyphicon glyphicon-home"></span>&nbsp; Dirección: Central La Paz - Loayza No. 118</p>
+				<p><span class="glyphicon glyphicon-phone"></span>&nbsp; 2150900, 2150901, 76580041, 76580049</p>
+				<p><a href="mailto:info@correo.net"><span class="glyphicon glyphicon-envelope"></span>&nbsp; inf@correo.net</a></p>
+				<p><a href="https://twitter.com/empresa" target="_blank"><span class="glyphicon glyphicon-asterisk"></span>&nbsp; Twitter/Empresa</a></p>
+				<p><a href="https://es-la.facebook.com/empresa" target="_blank"><span class="glyphicon glyphicon-asterisk"></span>&nbsp; Facebook/Empresa</a></p>
+				<p><a href="http://www.youtube.com/channel/empresa" target="_blank"><span class="glyphicon glyphicon-asterisk"></span>&nbsp; YouTube/Empresa</a></p>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title"><center>QR</center></h3>
+			</div>
+			<div class="panel-body">
+				<center><div id="addres"></div></center>    
+			</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$('#addres').qrcode("Dirección de la empresa, encriptado en codigo GR");
+			});
+		</script>
+	</aside>
+</div><hr>
+<div class="row">
+	<div id="map" style="height: 350px">
+		<center>Contenido del mapa</center>
+	</div>
+</div>

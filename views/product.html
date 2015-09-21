@@ -1,0 +1,8 @@
+<div class="row" ng-controller="categoryCtrl">
+	<div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center category" ng-repeat="desc in categorias">
+		<fieldset>
+			<legend>{{ desc.categoria }}</legend>
+			<a href="#"><img src="images/category/{{desc.imagen}}"></a>
+		</fieldset>
+	</div>
+</div>

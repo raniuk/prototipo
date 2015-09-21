@@ -1,0 +1,17 @@
+<div class="row" ng-controller="servicesCtrl">
+	<center><h3>Servicios que ofrece la joyeria</h3></center>
+	<div class="row">
+		<div class="col-lg-12" ng-repeat="serv in servicios">
+			<div class="media">
+			  <div class="media-left">
+			      <span class="glyphicon glyphicon-wrench iconsab"></span>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading">{{ serv.service }}</h4>
+			    <p> {{ serv.description }} </p>
+			  </div>
+			</div>
+			<hr>
+		</div>
+	</div>
+</div>

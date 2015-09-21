@@ -1,0 +1,16 @@
+[
+	{
+		"title": "Producto uno", 
+		"description": "descripcion del producto uno",
+		"image": "diamante.jpg",
+		"price_o": "100",
+		"price_p": "80"
+	},
+	{
+		"title": "Producto dos", 
+		"description": "descripcion del producto dos",
+		"image": "diamante.jpg",
+		"price_o": "100",
+		"price_p": "80"
+	}
+]

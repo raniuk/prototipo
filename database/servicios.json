@@ -1,0 +1,18 @@
+[
+	{
+		"service": "Servicio A",
+		"description": "Joyeria, es una empresa que se dedica a la venta y fabricación artesanal de joyas en plata ya sea nacional o italiana. Contamos con más de 10 años de experiencia en el sector. Estamos ubicados en la ciudad de Cochabamba – Bolivia."
+	},
+	{
+		"service": "Servicio B",
+		"description": "Joyeria, es una empresa que se dedica a la venta y fabricación artesanal de joyas en plata ya sea nacional o italiana. Contamos con más de 10 años de experiencia en el sector. Estamos ubicados en la ciudad de Cochabamba – Bolivia."
+	},
+	{
+		"service": "Servicio C",
+		"description": "Joyeria, es una empresa que se dedica a la venta y fabricación artesanal de joyas en plata ya sea nacional o italiana. Contamos con más de 10 años de experiencia en el sector. Estamos ubicados en la ciudad de Cochabamba – Bolivia."
+	},
+	{
+		"service": "Servicio D",
+		"description": "Joyeria, es una empresa que se dedica a la venta y fabricación artesanal de joyas en plata ya sea nacional o italiana. Contamos con más de 10 años de experiencia en el sector. Estamos ubicados en la ciudad de Cochabamba – Bolivia."
+	}
+]

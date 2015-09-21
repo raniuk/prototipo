@@ -1,0 +1,33 @@
+<div class="row">
+	<center>
+		<h4>Por la fecha especial, hay las siguientes promociones</h4>
+		<hr>
+	</center>
+</div>
+<div class="row" ng-controller="promsCtrl">
+	<div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center category" ng-repeat="desc in promociones">
+		<fieldset>
+			<legend>{{ desc.categoria }}</legend>
+			<!--a href="" ng-click="fproductos(desc.id)"><img src="images/category/{{desc.imagen}}"></a-->
+			<button class="button-none" ng-click="toggleModal(desc.id, desc.categoria)"><img src="images/category/{{desc.imagen}}"></button>
+		</fieldset>
+		
+	</div>
+	<modal-dialog show='mdialog.modalShown' dialog-title='{{mdialog.title_cat}}' on-close='logClose()'>
+		<div class="products">
+			<div ng-repeat="prods in productos">
+				<div class="media">
+					<div class="media-left">
+				      <img class="media-object" src="images/{{prods.image}}" width="50px" height="50px" alt="{{ prods.title }}">
+					</div>
+					<div class="media-body">
+				    	<h4 class="media-heading"><strong>{{ prods.title }}</strong></h4>
+				    	<p>&raquo; {{ prods.description }}</p>
+						<strong>Precio:</strong> Antes:&nbsp;<span class="label label-danger price-old">{{ prods.price_o | currency:'Bs '}}</span> Ahora:&nbsp;<span class="label label-success">{{ prods.price_p | currency:'Bs '}}</span><br>
+					</div>
+				</div><hr>
+			</div>
+		</div>
+	</modal-dialog>
+</div>
+<!--{{ desc.product.lol }}-->

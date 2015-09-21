@@ -1,0 +1,32 @@
+[
+	{
+		"id": "1",
+		"categoria": "Categoria 1",
+		"imagen": "c0012.jpg"
+	},
+	{
+		"id": "2",
+		"categoria": "Categoria 2",
+		"imagen": "c0023.jpg"
+	},
+	{
+		"id": "3",
+		"categoria": "Categoria 3",
+		"imagen": "c0024.jpg"
+	},
+	{
+		"id": "4",
+		"categoria": "Categoria 4",
+		"imagen": "c0025.jpg"
+	},
+	{
+		"id": "5",
+		"categoria": "Categoria 5",
+		"imagen": "c0026.jpg"
+	},
+	{
+		"id": "6",
+		"categoria": "Categoria 6",
+		"imagen": "c0027.jpg"
+	}
+]
