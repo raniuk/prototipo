@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Prototipo del proyecto</title>
+    <meta name="description" content="Proyecto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!--link href='https://fonts.googleapis.com/css?family=Lobster|Philosopher' rel='stylesheet' type='text/css'-->
+    <!--link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="styles/flexslider.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body ng-app="main_app">
+    <section class="contenedor">
+      <header class="row" ng-controller="logo">
+        <div class="col col-sm-3 headerlogo">
+          <img ng-src="images/{{imglogo}}">
+        </div>
+        <div class="col col-sm-7">
+          <h1 class="text-muted"><center>{{frase}}</center></h1>
+        </div>
+        <div class="col col-sm-2 socialmedia">
+          <center><img src="images/yeoman.png"></center>
+        </div>
+      </header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">&nbsp;</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" ng-controller="logo">
+              <img ng-src="images/{{imglogo}}">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#/ixn">INICIO <span class="sr-only">&nbsp;</span></a></li>
+              <li><a href="#/lwc">NOSOTROS</a></li>
+              <li><a href="#/uys">PRODUCTOS</a></li>
+              <li><a href="#/pze">SERVICIOS</a></li>
+              <li><a href="#/eks">PROMOCIONES</a></li>
+              <li><a href="#/kgj">CONTACTOS</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div ng-view=""></div>
+      </section>
+    </section>
+    <footer class="footer">
+      <span>Copyright © 2015 <strong>Empresa</strong></span>
+      <span>Desarrollado por <a href="dev.org">dev.org</a></span>
+    </footer>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <!--script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script-->
+
+    
+    
+    <script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.qrcode.min.js"></script>
+    <script src="scripts/jquery.flexslider-min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/ng-modal.min.js"></script>
+    <script src="scripts/angular-flexslider.js"></script>
+    <!--script src="scripts/angular-animate.min.js"></script>
+    <script src="scripts/angular-sanitize.min.js"></script>
+    <script src="scripts/angular-resource.min.js"></script>
+    <script src="scripts/angular-cookies.min.js"></script-->
+
+    <!--script src="scripts/app.js"></script-->
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+  </body>
+</html>
